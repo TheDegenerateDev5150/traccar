@@ -57,7 +57,7 @@ public class Jt808ProtocolDecoder extends BaseProtocolDecoder {
     private static final DateTimeFormatter DATE_FORMAT = DateTimeFormatter
             .ofPattern("yyyyMMddHHmmss").withZone(ZoneOffset.UTC);
 
-    private static final Charset CHARSET_GBK =
+    public static final Charset CHARSET_GBK =
             Charset.isSupported("GBK") ? Charset.forName("GBK") : StandardCharsets.US_ASCII;
 
     public Jt808ProtocolDecoder(Protocol protocol) {
